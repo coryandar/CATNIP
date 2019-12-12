@@ -4,7 +4,7 @@ CATNIP = **C**reating **A** **T**ranslational **N**etwork for **I**ndication **P
 
 Last Updated: 12/12/2019
 
-Correspondence to: Coryandar Gilvary, cmg265 [at] cornell [dot] edu
+Correspondence to: Coryandar Gilvary, cmg287 [at] cornell [dot] edu
 
 
 **Requirements**
