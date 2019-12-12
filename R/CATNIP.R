@@ -1,6 +1,9 @@
 library(visNetwork)
 
 createGraph <-function(df, drugs, fileName, shape, colorByATC = F){
+  #sort drugs in alphabetical order for easy search
+  drugs <- sort(drugs)
+  
   if(colorByATC){
 
      group <- unlist(lapply(drugs, function(d) ifelse(d %in% data$atcCodeMapping$Drug,
