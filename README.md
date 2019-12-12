@@ -51,6 +51,4 @@ getDrugBasedResult(vectorOfDrugs, fileName = "/path/to/figure/output, colorByATC
 ```
 
 # Citation
-Please cite our paper: 
-
 Gilvary, C., Elkhader, J., Madhukar, N., Henchcliffe, C., Goncalves, M.D. and Elemento, O., 2019. A machine learning and network framework to discover new indications for small molecules. bioRxiv, p.748244.
