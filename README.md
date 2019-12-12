@@ -19,7 +19,7 @@ install.packages("visNetwork")
 ```
 
 # Quick Start
-**CATNIP Repurpsoing Network**
+**CATNIP Repurposing Network**
 
 The CATNIP repurposing network can be searched either by specifying one or more drugs or diseases. The probability of CATNIP prediction that two drugs will share an indication is 0.95 by default, but can be changed by the user.  
 
