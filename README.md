@@ -30,7 +30,7 @@ source("/path/to/CATNIP/R/CATNIP.R")
 getDrugBasedResult(vectorOfDrugs)
 ```
 
-Search by disease(s) of interest:
+Search by disease(s) of interest according to UMLS concept ids:
 
 ```
 source("/path/to/CATNIP/R/CATNIP.R")
