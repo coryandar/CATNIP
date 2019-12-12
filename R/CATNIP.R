@@ -37,14 +37,11 @@ createGraph <-function(df, drugs, fileName, shape, colorByATC = F){
 ##Get Output
 getDiseaseBasedResult <- function(diseasesOfInterest, probability = 0.95, 
                                fileName = NULL, 
-                               colorByATC = F, strict = T){
+                               colorByATC = F){
 
-  if(strict){
-    catnipPrediction <- subset(data$catnipPrediction, Dataset != "test")
-  }else{
-    catnipPrediction <- data$catnipPrediction
-  }
-  
+
+  catnipPrediction <- data$catnipPrediction
+
   ##Check for drug
   if(length(intersect(dseasesOfInterest, data$diseaseMapping$CUID)) == 0){
     stop("This disease is either not in the dataset or under a different name.")
@@ -75,11 +72,7 @@ getDrugBasedResult <- function(drugsOfInterest, probability = 0.95,
   ##Format drugs 
   drugsOfInterest <- toupper(drugsOfInterest)
   ##Only include drugs with indications
-  if(strict){
-    catnipPrediction <- subset(data$catnipPrediction, Dataset != "test")
-  }else{
-    catnipPrediction <- data$catnipPrediction
-  }
+  catnipPrediction <- data$catnipPrediction
   
   ##Check for drug
   if(length(intersect(drugsOfInterest, unique(c(catnipPrediction$drug1,
