@@ -47,7 +47,7 @@ getDrugBasedResult(vectorOfDrugs, fileName = "/path/to/figure/output)
 Color drugs based on ATC codes:
 ```
 source("/path/to/CATNIP/R/CATNIP.R")
-getDrugBasedResult(vectorOfDrugs, fileName = "/path/to/figure/output, colorByATC = T)
+getDrugBasedResult(vectorOfDrugs, fileName = "/path/to/figure/output", colorByATC = T)
 ```
 
 # Citation
