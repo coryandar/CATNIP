@@ -46,7 +46,7 @@ getDiseaseBasedResult <- function(diseasesOfInterest, probability = 0.95,
   catnipPrediction <- data$catnipPrediction
 
   ##Check for drug
-  if(length(intersect(dseasesOfInterest, data$diseaseMapping$CUID)) == 0){
+  if(length(intersect(diseasesOfInterest, data$diseaseMapping$CUID)) == 0){
     stop("This disease is either not in the dataset or under a different name.")
   }
   
